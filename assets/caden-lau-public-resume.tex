@@ -1,0 +1,232 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\definecolor{linkblue}{RGB}{0,102,204}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.575in}
+\addtolength{\evensidemargin}{-0.575in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1.25in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+
+\setlist[itemize]{topsep=1pt,partopsep=0pt,parsep=0pt,itemsep=0pt}
+
+\titleformat{\section}
+  {\scshape\raggedright\large}
+  {}{0em}{}
+  [\color{black}\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+% ---------- RESUME COMMANDS ----------
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{\linewidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \small #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeProjectHeadingAward}[3]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{\linewidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+    \small #1 & \small #2 \\
+    \multicolumn{2}{@{}l@{}}{\small\textit{#3}} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0in,label={},itemsep=2pt,topsep=1pt]
+}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-3pt}}
+\newcommand{\resumeProjectListStart}{\resumeSubHeadingListStart}
+\newcommand{\resumeProjectListEnd}{\resumeSubHeadingListEnd}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.22in,label={\scriptsize$\bullet$},itemsep=0pt,topsep=2pt]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+  \textbf{\Huge \scshape Caden Lau} \\
+  \vspace{1pt}
+  \small
+  \faEnvelope\ \href{mailto:caden.t.lau@outlook.com}{\underline{caden.t.lau@outlook.com}} $|$
+  \faLinkedin\ \href{https://www.linkedin.com/in/caden-lau-3b8590431/}{\underline{LinkedIn}} $|$
+  \faGithub\ \href{https://github.com/CadenLau}{\underline{GitHub}}
+\end{center}
+\vspace{-10pt}
+
+% ---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Cornell University {\normalfont\textit{\ \textbar\ GPA: 3.71}}}
+    {Ithaca, NY}
+    {B.A. in Computer Science, Mathematics}
+    {Expected May 2028}
+  \vspace{3pt}\par\noindent
+  {\small
+    \textbf{Coursework:} Computer Game Architecture, Computer Graphics,
+    Analysis of Algorithms, C++ Programming, Linear Algebra, Discrete Structures,
+    Number Theory, Data Structures (Java), Functional Programming (OCaml)
+  }\par
+\resumeSubHeadingListEnd
+
+% ---------- GAME DESIGN EXPERIENCE ----------
+\section{Game Design \& Development Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Game Neighbor LLC $|$ Tabletop Game Design Company}
+    {2026 -- Present}
+    {Co-Owner \& Game Designer}
+    {}
+  \resumeItemListStart
+    \resumeItem{
+      Co-developing \textbf{two original tabletop games} for planned Kickstarter releases.
+    }
+    \resumeItem{
+      Developing \textit{Legends of the Abyss}, a competitive tabletop strategy game,
+      with a focus on strategic depth, card interactions, and game balance.
+    }
+    \resumeItem{
+      Co-designing cards and gameplay systems, refining rules through prototyping,
+      playtesting, and balance analysis.
+    }
+    \resumeItem{
+      Built a Python simulation environment and search-based agents to support
+      quantitative gameplay balance analysis.
+    }
+    \resumeItem{
+      Developing \textit{Rainy Days}, a strategic take on War for families, emphasizing easy-to-learn rules,
+      brisk gameplay, and player interaction designed to encourage repeat play.
+    }
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {DGA Studios $|$ Development in Games Association}
+    {2026 -- Present}
+    {Gameplay Programmer}
+    {Ithaca, NY}
+  \resumeItemListStart
+    \resumeItem{
+      Developed a Unity notebook system for an upcoming Steam release,
+      integrating evidence submission, prerequisite-based question chains,
+      and puzzle-driven progression.
+    }
+    \resumeItem{
+      Created reusable editor tools enabling designers to author interconnected
+      questions and puzzles without modifying code, saving an estimated
+      \textbf{dozens of development hours}.
+    }
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ---------- GAME PROJECTS ----------
+\section{Game Projects \& Awards}
+\resumeProjectListStart
+
+  \resumeProjectHeadingAward
+    {\textbf{Little Wonder} $|$ \emph{Software Lead, Lead Level Designer $|$ Java, libGDX}}
+    {\href{https://youtu.be/dGHnZTxYw9Y}{\textcolor{linkblue}{Video}}}
+    {Boston FIG Finalist 2026 $\cdot$ Most Polished, Cornell GDIAC Showcase 2026}
+  \resumeItemListStart
+    \resumeItem{
+      Designed \textbf{17 distinct combat arenas}, corresponding hard-mode variants,
+      transitional areas, and a tutorial for a 2D action platformer.
+    }
+    \resumeItem{
+      Reworked gameplay and level designs following mid-development feedback,
+      transitioning to an arena-based combat system built around revised mechanics.
+    }
+    \resumeItem{
+      Architected core combat and gameplay systems while coordinating implementation
+      and software integration across an \textbf{8-person team}.
+    }
+  \resumeItemListEnd
+
+  \resumeProjectHeadingAward
+    {\textbf{Mimi's Midnight Brew} $|$ \emph{Game Designer, Sole Programmer $|$ C\#, Unity}}
+    {\href{https://boosterball478.itch.io/mimis-midnight-brew}{\textcolor{linkblue}{Game}}}
+    {Judge's Pick, Cornell DGA Fall Game Jam 2026}
+  \resumeItemListStart
+    \resumeItem{
+      Co-designed a memory-based gameplay loop built around ordered recipe completion,
+      ingredient selection, time-based penalties, and escalating difficulty.
+    }
+    \resumeItem{
+      Designed risk/reward mechanics including wildcard ingredients and optional
+      recipe recall at a time cost; developed and released the game in \textbf{24 hours}.
+    }
+  \resumeItemListEnd
+
+  \resumeProjectHeadingAward
+    {\textbf{Drizzle Dash} $|$ \emph{Project Lead $|$ C\#, Unity}}
+    {\href{https://boosterball478.itch.io/drizzle-dash}{\textcolor{linkblue}{Game}}}
+    {Winner, Cornell DGA Spring Game Jam 2026}
+  \resumeItemListStart
+    \resumeItem{
+      Led a \textbf{3-person team} to deliver a skill-based physics platformer in
+      \textbf{48 hours}, implementing dash movement and coordinating development and playtesting.
+    }
+  \resumeItemListEnd
+
+\resumeProjectListEnd
+
+% ---------- ADDITIONAL EXPERIENCE ----------
+\section{Additional Experience}
+\resumeSubHeadingListStart
+  \vspace{-1pt}\item
+  \begin{tabular*}{\linewidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{Global English Camp $|$ Come On Out} $|$ \textit{\small English Coach}
+    & \small Summers 2025 \& 2026 \\
+  \end{tabular*}\vspace{-3pt}
+  \resumeItemListStart
+    \resumeItem{
+      Taught English full-time in Japan, returning in 2026 to mentor fellow coaches
+      and serve as an acting program leader for a portion of the program.
+    }
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% ---------- SKILLS ----------
+\section{Design \& Technical Skills}
+{\small
+  \textbf{Design:} Card Design, Systems Design, Game Balance, Combat Design,
+  Level Design, Rapid Prototyping, Playtesting \\
+  \textbf{Engines:} Unity, Unreal Engine 5, libGDX \\
+  \textbf{Programming:} C\#, Java, C++, Python, TypeScript, JavaScript, OCaml
+}\par
+
+\end{document}
